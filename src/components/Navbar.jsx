@@ -72,11 +72,19 @@ const Navbar = () => {
                     name={user?.email}
                   />
                 </MenuButton>
-                <MenuList>
-                  <Link to="/watchlist">
-                    <MenuItem>Watchlist</MenuItem>
+                <MenuList backgroundColor={"black"}>
+                  <Link to="/watchlist" backgroundColor={"black"}>
+                    <MenuItem color="white" backgroundColor={"black"}>
+                      Watchlist
+                    </MenuItem>
                   </Link>
-                  <MenuItem onClick={logout}>Logout</MenuItem>
+                  <MenuItem
+                    color="white"
+                    backgroundColor={"black"}
+                    onClick={logout}
+                  >
+                    Logout
+                  </MenuItem>
                 </MenuList>
               </Menu>
             )}

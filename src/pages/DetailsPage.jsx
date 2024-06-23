@@ -86,8 +86,6 @@ const DetailsPage = () => {
     fetchData();
   }, [type, id]);
 
-  console.log(video, videos, "videos");
-
   const handleSaveToWatchlist = async () => {
     if (!user) {
       toast({
@@ -229,6 +227,8 @@ const DetailsPage = () => {
                     leftIcon={<SmallAddIcon />}
                     variant={"outline"}
                     onClick={handleSaveToWatchlist}
+                    color={"white"}
+                    _hover={"outline"}
                   >
                     Add to watchlist
                   </Button>
